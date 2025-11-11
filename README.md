@@ -46,7 +46,7 @@ This structure separates data by processing stage, enabling clear data lineage t
 
 **📸 Screenshot: S3 Bucket Structure**
 
-![S3 Bucket Structure](screenshots/01-s3-bucket-structure.png)
+![S3 Bucket Structure](screenshots/01-s3-bucket-structure.jpg)
 
 *Screenshot shows the three folders (raw, processed, enriched) in the S3 bucket*
 
