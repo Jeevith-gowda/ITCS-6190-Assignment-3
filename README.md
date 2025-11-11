@@ -1,8 +1,9 @@
 # ITCS-6190 Assignment 3: AWS Data Processing Pipeline
 
-**Author:** Jeevith  
+**Author:** Jeevith Doddalingegowda Rama
 **Date:** November 11, 2025  
 **Course:** ITCS-6190 Cloud Computing for Data Analysis
+**ID:** 801455831
 
 ---
 
@@ -80,7 +81,7 @@ Created three IAM roles with principle of least privilege to enable secure servi
 
 **📸 Screenshot: IAM Roles Created**
 
-![IAM Roles](screenshots/02-iam-roles.png)
+![IAM Roles](screenshots/02-iam-roles.jpg)
 
 *Screenshot displays all three IAM roles in the IAM console*
 
@@ -114,7 +115,7 @@ This removes stale pending/cancelled orders while preserving completed transacti
 
 **📸 Screenshot: Lambda Function Created**
 
-![Lambda Function](screenshots/03-lambda-function.png)
+![Lambda Function](screenshots/03-lambda-function.jpg)
 
 *Screenshot shows the Lambda function with Python code visible and "Changes deployed" confirmation*
 
@@ -139,13 +140,13 @@ The prefix and suffix filters prevent infinite loops (Lambda won't trigger on it
 
 **📸 Screenshot: S3 Trigger Configuration**
 
-![S3 Trigger](screenshots/04-s3-trigger.png)
+![S3 Trigger](screenshots/04-s3-trigger.jpg)
 
 *Screenshot shows the Function overview diagram with S3 connected to Lambda*
 
 **📸 Screenshot: Processed CSV File in S3**
 
-![Processed File](screenshots/05-processed-csv.png)
+![Processed File](screenshots/05-processed-csv.jpg)
 
 *Screenshot displays filtered_Orders.csv in the processed/ folder with timestamp and file size*
 
@@ -183,7 +184,7 @@ Manual schema definition is error-prone and time-consuming. Glue Crawler automat
 
 **📸 Screenshot: Glue Crawler CloudWatch Logs**
 
-![Crawler Logs](screenshots/06-crawler-cloudwatch.png)
+![Crawler Logs](screenshots/06-crawler-cloudwatch.jpg)
 
 *Screenshot shows crawler run history with "Succeeded" status and "Tables added: 1"*
 
@@ -289,7 +290,7 @@ LIMIT 10;
 
 **📸 Screenshot: Athena Query Results in S3 Enriched Folder**
 
-![Athena Results](screenshots/07-athena-results.png)
+![Athena Results](screenshots/07-athena-results.jpg)
 
 *Screenshot shows multiple CSV files in the enriched/ folder representing query results*
 
@@ -340,7 +341,7 @@ Accessed via: `http://[EC2-PUBLIC-IP]:5000`
 
 **📸 Screenshot: Final Webpage Dashboard**
 
-![Web Dashboard](screenshots/08-web-dashboard.png)
+![Web Dashboard](screenshots/08-web-dashboard.jpg)
 
 *Screenshot shows the browser displaying "📊 Athena Orders Dashboard" with all 5 query results rendered as HTML tables*
 
@@ -430,8 +431,8 @@ The automated pipeline successfully:
 - ✅ Provides interactive web dashboard for stakeholder insights
 - ✅ Operates entirely on serverless infrastructure (zero server management)
 
-**Total Time to Complete:** ~2 hours  
-**Lines of Code Written:** ~150 (Lambda + Flask app)  
+
+
 **AWS Services Used:** 6 (S3, Lambda, IAM, Glue, Athena, EC2)
 
 ---
